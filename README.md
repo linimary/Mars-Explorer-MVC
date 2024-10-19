@@ -51,12 +51,12 @@ Mars Explorer is a university project built using the Spring MVC framework. This
 
 5. Open your browser and go to:
     ```
-    http://localhost:8080/photos
+    http://localhost:8080/
     ```
 
 ## Folder Structure
 
-- **domain**: Contains DTOs and entities related to the project.
+- **domain**: Contains DTOs and services related to the project.
 - **infrastructure**: Contains exception handling classes.
 - **web**: Contains controllers for handling web requests.
 
