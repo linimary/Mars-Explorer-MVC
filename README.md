@@ -59,6 +59,7 @@ Mars Explorer is a university project built using the Spring MVC framework. This
 - **domain**: Contains DTOs and services related to the project.
 - **infrastructure**: Contains exception handling classes.
 - **web**: Contains controllers for handling web requests.
+- **resources/templates**: Contains view templates for rendering the UI.
 
 ## API Integration
 
