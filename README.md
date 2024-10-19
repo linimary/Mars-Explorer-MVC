@@ -12,7 +12,7 @@ Mars Explorer is a university project built using the Spring MVC framework. This
 ## Technologies Used
 
 - **Java 21**
-- **Spring Boot**
+- **Spring**
 - **Thymeleaf**
 - **Bootstrap**
 - **NASA Mars Rover Photos API**
