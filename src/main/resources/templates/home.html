@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mars Explorer - Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      position: relative;
+      background-image: url('/images/mars-home.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container text-center">
+  <h1 class="mt-5 mb-4">Welcome to Mars Explorer</h1>
+  <p class="mb-5">Dive into the mysteries of Mars!</p>
+
+  <div class="row mb-5 mt-5">
+    <div class="col-md-6 mb-5 mt-4">
+      <h2>Rover Photos</h2>
+      <p class="mb-4 mt-4">Check out amazing photos captured by Mars rovers.</p>
+      <a class="btn btn-outline-light" href="/data-picker">View Photos</a>
+    </div>
+    <div class="col-md-6 mb-5 mt-4">
+      <h2>Mars Weather</h2>
+      <p class="mb-4 mt-4">Track this week’s Martian temperatures day by day.</p>
+      <a class="btn btn-outline-light" href="/weather">View Weather</a>
+    </div>
+  </div>
+
+  <div class="container my-5 mb-5">
+    <h2>Did You Know?</h2>
+    <ul class="list-unstyled">
+      <li>Mars is known as the Red Planet due to its reddish appearance.</li>
+      <li>The largest volcano in the solar system, Olympus Mons, is located on Mars.</li>
+      <li>Mars has two small moons named Phobos and Deimos.</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

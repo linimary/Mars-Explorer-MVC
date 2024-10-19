@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Mars Rover Photos</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      margin-top: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    form {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form input, form button {
+      margin: 10px;
+    }
+
+    .photo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .photo-item {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      border: 1px solid white;
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    input[type="date"] {
+      padding: 10px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    img {
+      border: 2px solid #ddd;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<a href="/" class="btn back-button">Back to Home</a>
+<h1>Mars Rover Photos</h1>
+
+<form action="/photos" method="get">
+  <input type="date" name="earthDate" required>
+  <button class="btn btn-outline-light" type="submit">Show Photos</button>
+</form>
+
+<div>
+  <div class="photo-container" th:if="${photos}" th:each="photo : ${photos}">
+    <div class="photo-item">
+      <img th:src="${photo.imgSrc}" alt="Mars Photo" width="400">
+      <p th:text="'Date: ' + ${photo.earthDate}"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
