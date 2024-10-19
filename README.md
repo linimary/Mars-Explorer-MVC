@@ -63,7 +63,7 @@ Mars Explorer is a university project built using the Spring MVC framework. This
 
 ## API Integration
 
-The application integrates with the NASA Mars Rover Photos API to fetch images taken by the Mars Rovers on specific Earth dates, and NASA InSight Mars Weather Service API to display the weekly weather forecast. You can learn more about the NASA API [here](https://api.nasa.gov) and the weather API documentation.
+The application integrates with the NASA Mars Rover Photos API to fetch images taken by the Mars Rovers on specific Earth dates, and NASA InSight Mars Weather Service API to display the weekly weather forecast. You can learn more about the NASA API [here](https://api.nasa.gov).
 
 ## Future Enhancements
 
