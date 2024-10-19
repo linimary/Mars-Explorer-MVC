@@ -41,7 +41,6 @@ Mars Explorer is a university project built using the Spring MVC framework. This
 3. Update the `application.properties` file with your API keys:
     ```properties
     nasa.api.key=YOUR_NASA_API_KEY
-    weather.api.key=YOUR_WEATHER_API_KEY
     ```
 
 4. Build and run the application using Maven:
